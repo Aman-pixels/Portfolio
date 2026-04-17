@@ -14,7 +14,7 @@ const Hero = () => {
       <div className="max-w-7xl mx-auto text-center z-10 w-full flex flex-col items-center">
         
         <TextReveal 
-          className="text-8xl md:text-[14rem] font-serif text-white tracking-tighter leading-[0.8] mb-8 justify-center select-none"
+          className="text-6xl sm:text-8xl md:text-[14rem] font-serif text-white tracking-tighter leading-[0.8] mb-8 justify-center select-none px-4"
           delay={0.2}
         >
           Meet Aman.

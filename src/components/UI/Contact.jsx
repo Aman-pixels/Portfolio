@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { Github, Linkedin, ArrowUpRight } from 'lucide-react'
+import { Github, Linkedin, ArrowUpRight, Mail } from 'lucide-react'
 
 const socialLinks = [
   {
@@ -13,6 +13,12 @@ const socialLinks = [
     username: "Aman Kundal",
     link: "https://www.linkedin.com/in/aman-kundal-631192343/",
     icon: Linkedin
+  },
+  {
+    platform: "Email",
+    username: "amankundal540@gmail.com",
+    link: "mailto:amankundal540@gmail.com",
+    icon: Mail
   }
 ]
 
@@ -78,7 +84,7 @@ const Contact = () => {
            className="mt-48 pt-8 flex flex-col md:flex-row justify-between items-center text-[10px] uppercase tracking-[0.3em] text-white/20 gap-4 border-t border-white/5"
         >
           <span>© 2026 AMAN. ALL RIGHTS RESERVED.</span>
-          <a href="mailto:contact@example.com" className="hover:text-white transition-colors">Drop an email</a>
+          <a href="mailto:amankundal540@gmail.com" className="hover:text-white transition-colors">Drop an email</a>
           <span>CRAFTED WITH PRECISION.</span>
         </motion.div>
 

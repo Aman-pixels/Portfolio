@@ -73,7 +73,9 @@ const ProjectCard = ({ project, index }) => {
         <div className="absolute inset-0 z-0">
           <img 
             src={project.image} 
-            alt={project.title} 
+            alt={`Screenshot of ${project.title}`} 
+            loading="lazy"
+            decoding="async"
             className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105 brightness-50 group-hover:brightness-75"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#030303] via-[#030303]/80 to-transparent opacity-90 group-hover:opacity-80 transition-opacity" />

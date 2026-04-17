@@ -41,13 +41,14 @@ const About = () => {
            transition={{ duration: 1, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
            className="relative flex-1 w-full aspect-square md:aspect-auto md:h-[600px] rounded-[3rem] overflow-hidden border border-white/5 bg-[#0a0a0a] group"
         >
-           <div className="absolute inset-0 bg-gradient-to-br from-white/[0.05] via-transparent to-transparent opacity-50 group-hover:opacity-100 transition-opacity duration-700"></div>
-           {/* Abstract shape representing growth / tech */}
-           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 border border-white/10 rounded-full group-hover:scale-110 transition-transform duration-1000 ease-in-out flex items-center justify-center">
-             <div className="w-48 h-48 border border-white/5 rounded-full rotate-45 flex items-center justify-center">
-                <div className="w-2 h-2 bg-green-500 rounded-full shadow-[0_0_15px_rgba(34,197,94,0.6)]"></div>
-             </div>
-           </div>
+           <div className="absolute inset-0 bg-gradient-to-t from-[#030303] via-transparent to-transparent z-10 opacity-80 group-hover:opacity-50 transition-opacity duration-700"></div>
+           <img 
+             src="/main%20image.png" 
+             alt="Aman portrait" 
+             loading="lazy" 
+             decoding="async"
+             className="w-full h-full object-cover grayscale brightness-75 group-hover:grayscale-0 group-hover:scale-105 group-hover:brightness-100 transition-all duration-1000 ease-out"
+           />
         </motion.div>
 
       </div>
