@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import TextReveal from '../common/TextReveal'
 import MagneticButton from '../common/MagneticButton'
-import { ArrowDown } from 'lucide-react'
+import { ArrowDown, Download } from 'lucide-react'
 
 const Hero = () => {
   return (
@@ -30,12 +30,24 @@ const Hero = () => {
         </motion.p>
         
         <motion.div
-           initial={{ opacity: 0, scale: 0.9 }}
-           animate={{ opacity: 1, scale: 1 }}
+           initial={{ opacity: 0, y: 20 }}
+           animate={{ opacity: 1, y: 0 }}
            transition={{ delay: 1.4, duration: 0.8 }}
-           className="flex gap-6"
+           className="flex flex-wrap justify-center gap-4 sm:gap-6"
         >
-          <MagneticButton text="Explore Work" className="bg-white text-black hover:bg-white/90 border-transparent shadow-[0_0_20px_rgba(255,255,255,0.3)]" />
+          <MagneticButton 
+            text="Explore Work" 
+            onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
+            className="bg-white text-black hover:bg-white/90 border-transparent shadow-[0_0_20px_rgba(255,255,255,0.3)]" 
+          />
+          <MagneticButton 
+            href="/Aman_Resume.pdf" 
+            download 
+            text="Download CV" 
+            className="bg-transparent text-white border-white/20 hover:border-white/40"
+          >
+            <Download className="w-4 h-4 mr-1" />
+          </MagneticButton>
         </motion.div>
       </div>
 

@@ -1,5 +1,7 @@
 import { motion } from 'framer-motion'
 import TextReveal from '../common/TextReveal'
+import MagneticButton from '../common/MagneticButton'
+import { Download } from 'lucide-react'
 
 const About = () => {
   return (
@@ -20,7 +22,7 @@ const About = () => {
             Curious builder. Passionate about clean design.
           </TextReveal>
           
-          <div className="space-y-6 text-white/50 text-base md:text-lg font-light leading-relaxed">
+          <div className="space-y-6 text-white/50 text-base md:text-lg font-light leading-relaxed mb-10">
             <p>
               Hey! I'm Aman, an 18-year-old engineering student based in India. I transitioned from a curious beginner learning JavaScript syntax to a passionate full-stack developer focused on high-performance solutions.
             </p>
@@ -30,6 +32,17 @@ const About = () => {
             <p>
               Currently, I'm expanding my horizons into AI automation workflows with n8n and exploring the fundamentals of backend system architecture. If it involves code and creativity, I'm all in.
             </p>
+          </div>
+
+          <div className="flex">
+            <MagneticButton 
+              href="/Aman_Resume.pdf" 
+              download 
+              text="Download CV" 
+              className="bg-white/5 border-white/10 hover:bg-white/10"
+            >
+              <Download className="w-4 h-4 mr-1 text-white/70" />
+            </MagneticButton>
           </div>
         </motion.div>
         
