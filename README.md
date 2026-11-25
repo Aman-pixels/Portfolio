@@ -1,16 +1,41 @@
-# React + Vite
+# Aman Kundal — Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive React portfolio with an editorial layout, selected project previews, an accessible mobile menu, and direct contact links.
 
-Currently, two official plugins are available:
+## Run locally
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+```sh
+npm ci
+npm run dev
+```
 
-## React Compiler
+## Validate and build
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```sh
+npm run lint
+npm run build
+npm run preview
+```
 
-## Expanding the ESLint configuration
+Deploy the generated `dist` directory to any static host. The site assumes hosting at the domain root.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Edit the content
+
+- `src/components/UI/Hero.jsx`: introduction and resume link.
+- `src/components/UI/Projects.jsx`: project details, technologies, and live URLs.
+- `src/components/UI/About.jsx`: biography.
+- `src/components/UI/Skills.jsx`: toolkit and learning interests.
+- `src/components/UI/Experience.jsx`: learning milestones.
+- `src/components/UI/Contact.jsx`: email and social profiles.
+- `src/portfolio.css`: colors, typography, responsive layouts, and motion preferences.
+- `public/Aman_Resume.pdf`: downloadable resume.
+
+The WebP assets in `public` are optimized copies of the original portfolio images. Keep the originals when preparing new exports. Fonts load from Google Fonts with system fallbacks.
+
+Before publishing, update the Open Graph and Twitter image tags in `index.html` to use the absolute production URL of `/social-preview.jpg`.
+
+## Browser checks
+
+Verified at 320, 390, 600, 768, 1024, and 1440 pixels: no horizontal overflow, mobile menu and Escape behavior, section navigation, email copy, resume availability, and no runtime errors.
+
+The production build also passed automated axe checks for WCAG 2 A/AA and WCAG 2.1 AA at mobile and desktop widths. Automated checks do not replace a full accessibility review.

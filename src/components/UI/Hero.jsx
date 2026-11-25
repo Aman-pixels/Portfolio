@@ -1,72 +1,90 @@
-import { motion } from 'framer-motion'
-import TextReveal from '../common/TextReveal'
-import MagneticButton from '../common/MagneticButton'
-import { ArrowDown, Download } from 'lucide-react'
+import {
+  ArrowDown,
+  ArrowDownRight,
+  ArrowUpRight,
+  Download,
+  Plus,
+} from "lucide-react";
 
-const Hero = () => {
+export default function Hero() {
   return (
-    <section className="relative min-h-[100vh] flex flex-col items-center justify-center pt-24 pb-24 px-4 overflow-hidden font-sans">
-      
-      {/* Background radial gradient for premium feel */}
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-white/[0.03] via-transparent to-transparent pointer-events-none" />
-
-      {/* Hero Branding / Headline */}
-      <div className="max-w-7xl mx-auto text-center z-10 w-full flex flex-col items-center">
-        
-        <TextReveal 
-          className="text-6xl sm:text-8xl md:text-[14rem] font-serif text-white tracking-tighter leading-[0.8] mb-8 justify-center select-none px-4"
-          delay={0.2}
-        >
-          Meet Aman.
-        </TextReveal>
-
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1.0, duration: 1, ease: "easeOut" }}
-          className="text-white/40 text-lg md:text-2xl font-light tracking-wide max-w-2xl mx-auto mb-12"
-        >
-          Crafting <span className="text-white/80">premium digital experiences</span> with code & creativity.
-        </motion.p>
-        
-        <motion.div
-           initial={{ opacity: 0, y: 20 }}
-           animate={{ opacity: 1, y: 0 }}
-           transition={{ delay: 1.4, duration: 0.8 }}
-           className="flex flex-wrap justify-center gap-4 sm:gap-6"
-        >
-          <MagneticButton 
-            text="Explore Work" 
-            onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
-            className="bg-white text-black hover:bg-white/90 border-transparent shadow-[0_0_20px_rgba(255,255,255,0.3)]" 
-          />
-          <MagneticButton 
-            href="/Aman_Resume.pdf" 
-            download 
-            text="Download CV" 
-            className="bg-transparent text-white border-white/20 hover:border-white/40"
-          >
-            <Download className="w-4 h-4 mr-1" />
-          </MagneticButton>
-        </motion.div>
+    <section
+      className="hero-section container"
+      id="home"
+      aria-labelledby="hero-heading"
+    >
+      <div className="hero-topline">
+        <span>
+          <span className="status-dot" /> Developer & creative thinker
+        </span>
+        <span className="hero-location">
+          Based in India · Building for the web
+        </span>
       </div>
-
-      {/* Minimal Scroll Indicator */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 2.0, duration: 1 }}
-        className="absolute bottom-12 flex flex-col items-center gap-3"
-      >
-        <motion.div
-          animate={{ y: [0, 8, 0] }}
-          transition={{ repeat: Infinity, duration: 2, ease: 'easeInOut' }}
-        >
-          <ArrowDown className="w-5 h-5 text-white/30" />
-        </motion.div>
-      </motion.div>
+      <div className="hero-grid">
+        <div className="hero-copy">
+          <p className="eyebrow">
+            Hey there, I’m Aman Kundal <span className="hello">↗</span>
+          </p>
+          <h1 id="hero-heading">
+            A little code.
+            <br />A lot of <span className="serif-word">possibility.</span>
+          </h1>
+          <p className="hero-description">
+            I turn ideas into thoughtful digital experiences. Full-stack
+            development, a love for design, and a curiosity that never switches
+            off.
+          </p>
+          <div className="hero-actions">
+            <a className="button button-primary" href="#projects">
+              Explore my work <ArrowDownRight size={19} />
+            </a>
+            <a className="text-link" href="/Aman_Resume.pdf" download>
+              Résumé <Download size={16} />
+            </a>
+          </div>
+          <div className="hero-note">
+            <span className="note-line" /> Engineering student.
+            <br />
+            Always learning. Always building.
+          </div>
+        </div>
+        <div className="hero-visual">
+          <div className="portrait-frame">
+            <img
+              src="/aman-portrait.webp"
+              alt="Aman seated in a black suit"
+              width="720"
+              height="1200"
+              fetchPriority="high"
+            />
+            <div className="portrait-top">
+              <span>A.K. / THE HUMAN BEHIND THE CODE</span>
+              <Plus size={18} />
+            </div>
+            <span className="portrait-caption">
+              Curiosity is
+              <br />
+              <em>the starting point.</em>
+            </span>
+            <span className="portrait-index">01 / INTRO</span>
+          </div>
+          <a className="floating-label" href="#about">
+            <span className="status-dot" /> A builder at heart{" "}
+            <ArrowUpRight size={17} />
+          </a>
+          <span className="visual-cross" aria-hidden="true">
+            ✳
+          </span>
+        </div>
+      </div>
+      <div className="hero-bottom">
+        <a href="#projects">
+          <ArrowDown size={15} /> Scroll to discover
+        </a>
+        <span>Good things happen where design meets code.</span>
+        <span className="edition">PORTFOLIO / 2026</span>
+      </div>
     </section>
-  )
+  );
 }
-
-export default Hero
