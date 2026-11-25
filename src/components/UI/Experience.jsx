@@ -1,13 +1,23 @@
 const milestones = [
   {
+    year: "Oct 2026",
+    title: "Web Development Intern · SkillCraft Technology",
+    text: "Built three interactive web applications during a one-month internship: a quiz game, a responsive landing page, and a stopwatch using HTML, CSS, and JavaScript.",
+  },
+  {
+    year: "Nov–Dec 2025",
+    title: "Home Automation Intern · College Internship",
+    text: "Developed a home automation system, connecting hardware components with software logic and practical automation workflows.",
+  },
+  {
     year: "Now",
-    title: "Connecting the dots",
-    text: "Exploring AI workflows, system design, and the architecture behind better web applications.",
+    title: "Computer Science & Engineering · Ramaiah Institute of Technology",
+    text: "Studying for a B.E. in Bangalore (2024–2028 expected), with a current CGPA of 8.1 / 10.",
   },
   {
     year: "2024",
-    title: "From practice to products",
-    text: "Started building and deploying projects with React, the MERN stack, and Firebase.",
+    title: "PMSSS undergraduate scholarship",
+    text: "Awarded the Prime Minister’s Special Scholarship Scheme for undergraduate education. Solved 100+ problems on LeetCode and GeeksforGeeks.",
   },
   {
     year: "2023",

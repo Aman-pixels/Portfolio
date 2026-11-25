@@ -22,18 +22,17 @@ export default function About() {
       </div>
       <div className="about-content">
         <p className="about-lead">
-          I’m Aman, an engineering student in India who likes making the
-          internet a little more interesting.
+          I’m Aman, a Computer Science and Engineering student at Ramaiah
+          Institute of Technology in Bangalore.
         </p>
         <p>
-          What started with a few lines of JavaScript has become a love for
-          building complete web experiences. I care about the details: how an
-          interface feels, how quickly it responds, and how naturally it works.
+          I build full-stack applications and experiment with AI-powered tools.
+          I care about the details: how an interface feels, how reliably it
+          works, and how thoughtfully it solves a real problem.
         </p>
         <p>
-          These days, I’m building with React and the MERN stack, exploring AI
-          automation with n8n, and getting deeper into backend architecture.
-          There’s always something new to figure out. That’s my favorite part.
+          I’m especially interested in agentic systems, practical automation,
+          and the engineering that turns a promising idea into a useful product.
         </p>
         <div className="about-principles">
           <span>
@@ -42,6 +41,10 @@ export default function About() {
           <span>
             <Sparkles size={18} /> An eye for the details
           </span>
+        </div>
+        <div className="about-education">
+          <span>2024 — 2028</span>
+          <p><strong>B.E. Computer Science and Engineering</strong><br />Ramaiah Institute of Technology · CGPA 8.1 / 10</p>
         </div>
         <a className="text-link" href="#contact">
           Let’s build something together <ArrowUpRight size={17} />

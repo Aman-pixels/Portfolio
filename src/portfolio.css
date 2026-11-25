@@ -578,6 +578,18 @@ h1 {
   letter-spacing: -0.4px;
   color: #e4e7da;
 }
+.about-education {
+  display: flex;
+  gap: 17px;
+  border-top: 1px solid var(--line);
+  padding: 18px 0 23px;
+  margin-top: 5px;
+  color: var(--muted);
+  font-size: 10px;
+  line-height: 1.8;
+}
+.about-education > span { color: var(--accent); flex: 0 0 auto; }
+.about-education strong { color: #e4e7da; font-weight: 500; }
 .about-principles {
   display: flex;
   gap: 22px;

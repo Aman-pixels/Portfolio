@@ -8,28 +8,28 @@ const categories = [
     skills: [
       "React",
       "JavaScript (ES6+)",
+      "HTML & CSS",
       "Tailwind CSS",
-      "Three.js",
-      "Framer Motion",
+      "REST APIs",
     ],
   },
   {
     icon: Database,
     title: "Behind the scenes",
     label: "BACKEND",
-    skills: ["Node.js", "Express.js", "MongoDB", "Firebase"],
+    skills: ["Node.js", "Express.js", "FastAPI", "MongoDB & Mongoose", "SQL", "ChromaDB"],
   },
   {
     icon: Wrench,
     title: "The everyday kit",
     label: "TOOLS",
-    skills: ["Git & GitHub", "Vite", "Postman"],
+    skills: ["C · C++ · Java · Python", "Git & GitHub", "Docker · AWS"],
   },
   {
     icon: Workflow,
     title: "Next on the horizon",
     label: "EXPLORING",
-    skills: ["AI automation · n8n", "System design", "Backend architecture"],
+    skills: ["Generative AI & AI agents", "LangGraph · prompt engineering", "n8n · system design basics"],
   },
 ];
 

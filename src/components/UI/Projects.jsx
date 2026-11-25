@@ -2,14 +2,25 @@ import { ArrowUpRight, Github } from "lucide-react";
 
 const projects = [
   {
+    name: "MiniSoup",
+    subtitle: "An AI agent that fixes bugs, with humans in control.",
+    type: "AI developer tool",
+    image: "/minisoup-preview.svg",
+    link: "https://github.com/Aman-pixels",
+    description:
+      "A multi-step bug-fixing agent uses LangGraph to plan, repair, and review changes. A Docker sandbox runs the code, while a live dashboard streams agent progress and human-readable diffs.",
+    tags: ["Python", "LangGraph", "Docker", "FastAPI", "React"],
+    className: "project-soup",
+  },
+  {
     name: "MiniX",
     subtitle: "An easier way to explore, shop, and save.",
     type: "E-commerce experience",
     image: "/minix-preview.webp",
     link: "https://mini-x-pearl.vercel.app/",
     description:
-      "A shopping frontend with an animated cart, persistent local storage, and a carefully considered interface from browsing to checkout.",
-    tags: ["React", "Tailwind CSS", "Local storage"],
+      "A full-stack MERN shopping platform with product discovery, an AI-powered shopping assistant, user authentication, and a persistent cart.",
+    tags: ["React", "Node.js", "Express", "MongoDB"],
     className: "project-shop",
   },
   {
